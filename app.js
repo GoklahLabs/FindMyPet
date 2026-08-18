@@ -68,7 +68,7 @@ function initShareFlyer() {
 
     const flyerUrl = 'assets/panfleto.png';
     const pageUrl = window.location.href;
-    const shareText = '🚨 *PROCURA-SE: GATA NEGA* 🐾\nNossa gata está desaparecida no Jd. Ipanema (Santo André). Oferecemos recompensa!\nMais informações e WhatsApp dos tutores: ' + pageUrl;
+    const shareText = '🚨 *PROCURA-SE: GATA NEGA* 🐾\nNossa gata está desaparecida no Jd. Ipanema (Santo André). Oferecemos recompensa!\nMais informações e fotos:';
 
     // Tenta obter o arquivo de imagem do panfleto para compartilhar nativamente
     try {
