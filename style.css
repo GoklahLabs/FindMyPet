@@ -1,5 +1,5 @@
 /* ==========================================================
-   GATA NEGA - LINKTREE / CARTÃO DE CONTATOS WHATSAPP
+   GATA NEGA - LINKTREE & GALERIA DE FOTOS
    Fundo com Patinhas • Card Central Arredondado • Ultra Rápido
    ========================================================== */
 
@@ -30,6 +30,7 @@
   
   --radius-card: 32px;
   --radius-btn: 18px;
+  --radius-sm: 14px;
   --radius-full: 9999px;
   
   --shadow-card: 0 20px 45px -10px rgba(200, 16, 46, 0.15), 0 10px 25px -5px rgba(0, 0, 0, 0.08);
@@ -60,6 +61,7 @@ body {
   justify-content: center;
   position: relative;
   overflow-x: hidden;
+  padding: 16px 0;
 }
 
 /* ==========================================================
@@ -73,7 +75,6 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: 0;
-  /* SVG Paw prints repeated pattern in warm soft red/gray tint */
   background-color: #fef5f5;
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(200, 16, 46, 0.08) 0%, transparent 40%),
@@ -88,7 +89,7 @@ body {
 .main-wrapper {
   width: 100%;
   max-width: 480px;
-  padding: 24px 16px;
+  padding: 16px 14px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -97,11 +98,11 @@ body {
 
 .card-container {
   width: 100%;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: var(--radius-card);
-  padding: 32px 22px 26px;
+  padding: 30px 20px 24px;
   box-shadow: var(--shadow-card);
   border: 1.5px solid rgba(255, 255, 255, 0.9);
   display: flex;
@@ -123,7 +124,7 @@ body {
   letter-spacing: 0.8px;
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   border: 1px solid rgba(200, 16, 46, 0.2);
 }
 
@@ -156,12 +157,12 @@ body {
    ========================================================== */
 .avatar-wrapper {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .avatar-ring {
-  width: 124px;
-  height: 124px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   padding: 4px;
   background: linear-gradient(135deg, var(--primary-red) 0%, #f43f5e 50%, var(--accent-gold) 100%);
@@ -169,6 +170,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.avatar-ring:hover {
+  transform: scale(1.04);
 }
 
 .avatar-img {
@@ -202,7 +209,7 @@ body {
    ========================================================== */
 .card-header {
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .cat-title {
@@ -217,7 +224,7 @@ body {
   font-size: 0.88rem;
   color: var(--gray-600);
   font-weight: 600;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .reward-pill {
@@ -238,8 +245,8 @@ body {
   font-size: 0.9rem;
   color: var(--gray-700);
   line-height: 1.4;
-  margin-top: 14px;
-  padding: 0 6px;
+  margin-top: 12px;
+  padding: 0 4px;
 }
 
 .cta-message strong {
@@ -248,13 +255,13 @@ body {
 }
 
 /* ==========================================================
-   WHATSAPP BUTTONS GROUP (LINKTREE STYLE)
+   WHATSAPP BUTTONS GROUP
    ========================================================== */
 .whatsapp-links-group {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 24px;
 }
 
@@ -263,13 +270,13 @@ body {
   background: var(--white);
   border: 1.5px solid var(--gray-200);
   border-radius: var(--radius-btn);
-  padding: 12px 16px;
+  padding: 12px 14px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   text-decoration: none;
   color: var(--gray-900);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -285,7 +292,7 @@ body {
   transform: translateY(0);
 }
 
-/* Featured / Main Contact (Julia - Tutora) */
+/* Featured / Main Contact */
 .wa-btn.wa-featured {
   background: linear-gradient(135deg, #25D366 0%, #1ebd5a 100%);
   border: 1.5px solid #1ebd5a;
@@ -314,8 +321,8 @@ body {
 
 /* Icon Box */
 .wa-icon-box {
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: var(--whatsapp-light);
   color: #128C7E;
@@ -331,7 +338,7 @@ body {
   color: var(--white);
 }
 
-/* Button Text Content */
+/* Button Text */
 .wa-btn-content {
   display: flex;
   flex-direction: column;
@@ -341,13 +348,13 @@ body {
 }
 
 .wa-person-name {
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 800;
   line-height: 1.2;
 }
 
 .wa-phone-number {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--gray-500);
   margin-top: 2px;
@@ -362,7 +369,7 @@ body {
   color: var(--gray-700);
   padding: 6px 10px;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 700;
   flex-shrink: 0;
   transition: var(--transition);
@@ -371,6 +378,88 @@ body {
 .wa-btn:hover .wa-action-badge {
   background-color: var(--whatsapp-light);
   color: #128C7E;
+}
+
+/* ==========================================================
+   PHOTO GALLERY SECTION
+   ========================================================== */
+.gallery-section {
+  width: 100%;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 16px 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.gallery-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.gallery-icon {
+  font-size: 1.1rem;
+}
+
+.gallery-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  flex-grow: 1;
+}
+
+.gallery-hint {
+  font-size: 0.72rem;
+  color: var(--gray-500);
+  font-weight: 600;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background-color: var(--gray-200);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.08);
+}
+
+.flyer-thumb {
+  object-position: top center;
+}
+
+.thumb-badge {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background-color: rgba(200, 16, 46, 0.88);
+  color: var(--white);
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 4px;
+  pointer-events: none;
 }
 
 /* ==========================================================
@@ -383,35 +472,126 @@ body {
   align-items: center;
   gap: 12px;
   border-top: 1px solid var(--gray-200);
-  padding-top: 18px;
+  padding-top: 16px;
 }
 
 .btn-share {
-  background-color: var(--gray-100);
-  color: var(--gray-700);
-  border: 1px solid var(--gray-200);
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-hover) 100%);
+  color: var(--white);
+  border: none;
   border-radius: var(--radius-full);
-  padding: 10px 18px;
+  padding: 12px 22px;
   font-family: inherit;
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.88rem;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
   transition: var(--transition);
 }
 
 .btn-share:hover {
-  background-color: var(--primary-red-light);
-  border-color: rgba(200, 16, 46, 0.2);
-  color: var(--primary-red);
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.btn-share:active {
+  transform: translateY(1px);
 }
 
 .location-tag {
   font-size: 0.76rem;
   color: var(--gray-400);
   font-weight: 600;
+}
+
+/* ==========================================================
+   PHOTO LIGHTBOX MODAL
+   ========================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  background: var(--gray-900);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--white);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition);
+}
+
+.modal-close-btn:hover {
+  background: var(--primary-red);
+}
+
+.modal-img-wrapper {
+  width: 100%;
+  max-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  object-fit: contain;
+}
+
+.modal-caption {
+  padding: 12px 16px;
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--gray-900);
 }
 
 /* ==========================================================
@@ -422,7 +602,7 @@ body {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 10000;
   pointer-events: none;
   width: 90%;
   max-width: 360px;
@@ -451,10 +631,10 @@ body {
   }
 }
 
-/* Small Screens Adjustments */
+/* Small Screens */
 @media (max-width: 380px) {
   .card-container {
-    padding: 24px 16px 20px;
+    padding: 24px 14px 20px;
   }
   .cat-title {
     font-size: 1.6rem;
@@ -463,8 +643,8 @@ body {
     padding: 10px 12px;
     gap: 10px;
   }
-  .wa-icon-box {
-    width: 38px;
-    height: 38px;
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
   }
 }
