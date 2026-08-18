@@ -9,8 +9,9 @@ Página web estilo **Linktree** criada para ser acessada via QR Code ou comparti
 | Nome | Telefone | Mensagem Pré-definida |
 | :--- | :--- | :--- |
 | **Julia (Tutora)** | `(11) 98423-4941` | *Olá, tenho informações sobre a NEGA 🐾* |
-| **Joselania** | `(11) 97958-8733` | *Olá, tenho informações sobre a NEGA 🐾* |
 | **Joselania** | `(11) 95272-8624` | *Olá, tenho informações sobre a NEGA 🐾* |
+| **Joselania** | `(11) 97958-8733` | *Olá, tenho informações sobre a NEGA 🐾* |
+| **Giovana** | `(11) 97766-9193` | *Olá, tenho informações sobre a NEGA 🐾* |
 | **Letícia** | `(11) 98100-0049` | *Olá, tenho informações sobre a NEGA 🐾* |
 
 ---
