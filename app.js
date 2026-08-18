@@ -66,15 +66,15 @@ function initShareFlyer() {
   shareBtn.addEventListener('click', async () => {
     showToast('Preparando imagem do panfleto...');
 
-    const flyerUrl = 'assets/panfleto.png';
-    const pageUrl = window.location.href;
+    const flyerUrl = 'assets/panfleto_oficial.png?t=' + Date.now();
+    const pageUrl = window.location.href.split('?')[0];
     const shareText = '🚨 *PROCURA-SE: GATA NEGA* 🐾\nNossa gata está desaparecida no Jd. Ipanema (Santo André). Oferecemos recompensa!\nMais informações e fotos:';
 
     // Tenta obter o arquivo de imagem do panfleto para compartilhar nativamente
     try {
-      const response = await fetch(flyerUrl);
+      const response = await fetch(flyerUrl, { cache: 'no-store' });
       const blob = await response.blob();
-      const file = new File([blob], 'Panfleto_NEGA_Desaparecida.png', { type: 'image/png' });
+      const file = new File([blob], 'Panfleto_NEGA_Desaparecida_17_08.png', { type: 'image/png' });
 
       // Se o navegador suportar compartilhamento de arquivo
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
