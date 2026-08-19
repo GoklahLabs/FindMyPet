@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   
-  <title>🐾 Informações da NEGA | WhatsApp dos Tutores</title>
-  <meta name="description" content="Tem informações sobre a gata NEGA? Entre em contato direto pelo WhatsApp com os tutores. Oferecemos recompensa!">
-  <meta name="theme-color" content="#c8102e">
+  <title>🎉 Gata NEGA Foi Encontrada! | Em Casa e Segura 🐾</title>
+  <meta name="description" content="A gata NEGA já foi encontrada e está segura em casa com sua família! Agradecemos de coração a todos que ajudaram nas buscas e compartilhamentos!">
+  <meta name="theme-color" content="#059669">
 
   <!-- Open Graph / WhatsApp Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="🚨 DESAPARECIDA: Gata NEGA 🐾">
-  <meta property="og:description" content="Tem informações ou viu a Nega? Clique para falar direto no WhatsApp dos tutores. Oferecemos recompensa!">
-  <meta property="og:image" content="assets/panfleto_oficial.png?v=3">
+  <meta property="og:title" content="🎉 FINAL FELIZ: A Gata NEGA Foi Encontrada! 🐾🏠">
+  <meta property="og:description" content="A Nega já está sã e salva em casa com sua família! Agradecemos de coração a todos que compartilharam e ajudaram!">
+  <meta property="og:image" content="assets/nega.png">
 
   <!-- Favicon (Patinha) -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -28,6 +28,9 @@
 </head>
 <body>
 
+  <!-- Canvas de Confetes Festivos -->
+  <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
   <!-- Paw Print Background Pattern -->
   <div class="paw-pattern-bg" aria-hidden="true"></div>
 
@@ -37,18 +40,19 @@
     <!-- Central Rounded Card -->
     <div class="card-container">
       
-      <!-- Top Alert Ribbon -->
-      <div class="urgent-tag">
-        <span class="pulse-dot"></span>
-        <span>PROCURA-SE • DESAPARECIDA</span>
+      <!-- Top Celebration Ribbon -->
+      <div class="celebration-tag">
+        <span class="sparkle-icon">🎉</span>
+        <span>ENCONTRADA! • EM CASA E A SALVO</span>
+        <span class="home-icon">🏠</span>
       </div>
 
       <!-- Avatar / Photo of Nega -->
       <div class="avatar-wrapper">
         <div class="avatar-ring">
-          <img src="assets/nega.png" alt="Foto principal da gata Nega" class="avatar-img gallery-trigger" data-full="assets/nega.png" data-caption="Nega (Frajola com olhos verdes)">
+          <img src="assets/nega.png" alt="Foto da gata Nega encontrada" class="avatar-img gallery-trigger" data-full="assets/nega.png" data-caption="Nega em casa sã e salva! 💖">
         </div>
-        <div class="avatar-badge">🐾</div>
+        <div class="avatar-badge" title="Em casa!">💖</div>
       </div>
 
       <!-- Header Info -->
@@ -56,20 +60,31 @@
         <h1 class="cat-title">Gata NEGA</h1>
         <p class="cat-subtitle">Frajola (preta e branca) • Olhos verdes</p>
         
-        <div class="reward-pill">
-          <span>💰 OFERECEMOS RECOMPENSA</span>
+        <div class="status-pill found-pill">
+          <span>✨ RESGATADA COM SUCESSO ✨</span>
+        </div>
+
+        <!-- Thank You / Heartfelt Message Card -->
+        <div class="thank-you-box">
+          <div class="thank-you-header">
+            <span class="thank-you-heart">❤️</span>
+            <h2 class="thank-you-title">MUITO OBRIGADO A TODOS!</h2>
+          </div>
+          <p class="thank-you-text">
+            Graças à ajuda, carinho e compartilhamentos de vizinhos, amigos e de toda a comunidade, a <strong>Nega</strong> já foi encontrada e está segura, quentinha, alimentada e recebendo muito amor em casa!
+          </p>
         </div>
 
         <p class="cta-message">
-          Se você a viu ou tem qualquer informação, clique abaixo para falar no <strong>WhatsApp</strong>:
+          Caso queira falar com os tutores ou mandar uma mensagem de carinho:
         </p>
       </header>
 
-      <!-- WhatsApp Action Buttons (Linktree Style) -->
+      <!-- WhatsApp Action Buttons -->
       <div class="whatsapp-links-group" role="region" aria-label="Contatos de WhatsApp">
         
         <!-- Contact 1: Julia (Tutora Principal) -->
-        <a href="https://wa.me/5511984234941?text=Ol%C3%A1%2C%20tenho%20informa%C3%A7%C3%B5es%20sobre%20a%20NEGA%20%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn wa-featured">
+        <a href="https://wa.me/5511984234941?text=Ol%C3%A1%20Julia%2C%20vi%20pelo%20site%20que%20a%20NEGA%20foi%20encontrada%21%20Que%20%C3%B3tima%20not%C3%ADcia%21%20%F0%9F%8E%89%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn wa-featured">
           <div class="wa-icon-box">
             <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.37C9.37 7.38 9.12 7.43 8.9 7.67C8.68 7.91 8.07 8.48 8.07 9.64C8.07 10.8 8.92 11.92 9.04 12.08C9.16 12.24 10.7 14.6 13.06 15.62C13.62 15.86 14.05 16.01 14.39 16.12C14.96 16.3 15.48 16.27 15.89 16.21C16.35 16.14 17.31 15.63 17.51 15.06C17.71 14.5 17.71 14.01 17.65 13.91C17.59 13.81 17.43 13.75 17.18 13.62C16.94 13.5 15.72 12.9 15.5 12.82C15.27 12.73 15.11 12.69 14.95 12.93C14.78 13.18 14.33 13.71 14.19 13.87C14.05 14.03 13.91 14.05 13.67 13.93C13.42 13.81 12.63 13.55 11.7 12.72C10.97 12.07 10.48 11.27 10.34 11.03C10.2 10.78 10.33 10.65 10.45 10.53C10.56 10.42 10.7 10.24 10.82 10.1C10.94 9.96 10.98 9.86 11.06 9.7C11.14 9.53 11.1 9.39 11.04 9.27C10.98 9.15 10.5 7.97 10.29 7.48C10.1 7 9.89 7.07 9.74 7.06C9.59 7.05 9.42 7.06 9.53 7.37Z"/></svg>
           </div>
@@ -84,7 +99,7 @@
         </a>
 
         <!-- Contact 2: Joselania (Tel 1) -->
-        <a href="https://wa.me/5511952728624?text=Ol%C3%A1%2C%20tenho%20informa%C3%A7%C3%B5es%20sobre%20a%20NEGA%20%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
+        <a href="https://wa.me/5511952728624?text=Ol%C3%A1%2C%20vi%20pelo%20site%20que%20a%20NEGA%20foi%20encontrada%21%20Que%20%C3%B3tima%20not%C3%ADcia%21%20%F0%9F%8E%89%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
           <div class="wa-icon-box">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.37C9.37 7.38 9.12 7.43 8.9 7.67C8.68 7.91 8.07 8.48 8.07 9.64C8.07 10.8 8.92 11.92 9.04 12.08C9.16 12.24 10.7 14.6 13.06 15.62C13.62 15.86 14.05 16.01 14.39 16.12C14.96 16.3 15.48 16.27 15.89 16.21C16.35 16.14 17.31 15.63 17.51 15.06C17.71 14.5 17.71 14.01 17.65 13.91C17.59 13.81 17.43 13.75 17.18 13.62C16.94 13.5 15.72 12.9 15.5 12.82C15.27 12.73 15.11 12.69 14.95 12.93C14.78 13.18 14.33 13.71 14.19 13.87C14.05 14.03 13.91 14.05 13.67 13.93C13.42 13.81 12.63 13.55 11.7 12.72C10.97 12.07 10.48 11.27 10.34 11.03C10.2 10.78 10.33 10.65 10.45 10.53C10.56 10.42 10.7 10.24 10.82 10.1C10.94 9.96 10.98 9.86 11.06 9.7C11.14 9.53 11.1 9.39 11.04 9.27C10.98 9.15 10.5 7.97 10.29 7.48C10.1 7 9.89 7.07 9.74 7.06C9.59 7.05 9.42 7.06 9.53 7.37Z"/></svg>
           </div>
@@ -99,7 +114,7 @@
         </a>
 
         <!-- Contact 3: Joselania (Tel 2) -->
-        <a href="https://wa.me/5511979588733?text=Ol%C3%A1%2C%20tenho%20informa%C3%A7%C3%B5es%20sobre%20a%20NEGA%20%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
+        <a href="https://wa.me/5511979588733?text=Ol%C3%A1%2C%20vi%20pelo%20site%20que%20a%20NEGA%20foi%20encontrada%21%20Que%20%C3%B3tima%20not%C3%ADcia%21%20%F0%9F%8E%89%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
           <div class="wa-icon-box">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.37C9.37 7.38 9.12 7.43 8.9 7.67C8.68 7.91 8.07 8.48 8.07 9.64C8.07 10.8 8.92 11.92 9.04 12.08C9.16 12.24 10.7 14.6 13.06 15.62C13.62 15.86 14.05 16.01 14.39 16.12C14.96 16.3 15.48 16.27 15.89 16.21C16.35 16.14 17.31 15.63 17.51 15.06C17.71 14.5 17.71 14.01 17.65 13.91C17.59 13.81 17.43 13.75 17.18 13.62C16.94 13.5 15.72 12.9 15.5 12.82C15.27 12.73 15.11 12.69 14.95 12.93C14.78 13.18 14.33 13.71 14.19 13.87C14.05 14.03 13.91 14.05 13.67 13.93C13.42 13.81 12.63 13.55 11.7 12.72C10.97 12.07 10.48 11.27 10.34 11.03C10.2 10.78 10.33 10.65 10.45 10.53C10.56 10.42 10.7 10.24 10.82 10.1C10.94 9.96 10.98 9.86 11.06 9.7C11.14 9.53 11.1 9.39 11.04 9.27C10.98 9.15 10.5 7.97 10.29 7.48C10.1 7 9.89 7.07 9.74 7.06C9.59 7.05 9.42 7.06 9.53 7.37Z"/></svg>
           </div>
@@ -114,7 +129,7 @@
         </a>
 
         <!-- Contact 4: Giovana -->
-        <a href="https://wa.me/5511977669193?text=Ol%C3%A1%2C%20tenho%20informa%C3%A7%C3%B5es%20sobre%20a%20NEGA%20%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
+        <a href="https://wa.me/5511977669193?text=Ol%C3%A1%2C%20vi%20pelo%20site%20que%20a%20NEGA%20foi%20encontrada%21%20Que%20%C3%B3tima%20not%C3%ADcia%21%20%F0%9F%8E%89%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
           <div class="wa-icon-box">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.37C9.37 7.38 9.12 7.43 8.9 7.67C8.68 7.91 8.07 8.48 8.07 9.64C8.07 10.8 8.92 11.92 9.04 12.08C9.16 12.24 10.7 14.6 13.06 15.62C13.62 15.86 14.05 16.01 14.39 16.12C14.96 16.3 15.48 16.27 15.89 16.21C16.35 16.14 17.31 15.63 17.51 15.06C17.71 14.5 17.71 14.01 17.65 13.91C17.59 13.81 17.43 13.75 17.18 13.62C16.94 13.5 15.72 12.9 15.5 12.82C15.27 12.73 15.11 12.69 14.95 12.93C14.78 13.18 14.33 13.71 14.19 13.87C14.05 14.03 13.91 14.05 13.67 13.93C13.42 13.81 12.63 13.55 11.7 12.72C10.97 12.07 10.48 11.27 10.34 11.03C10.2 10.78 10.33 10.65 10.45 10.53C10.56 10.42 10.7 10.24 10.82 10.1C10.94 9.96 10.98 9.86 11.06 9.7C11.14 9.53 11.1 9.39 11.04 9.27C10.98 9.15 10.5 7.97 10.29 7.48C10.1 7 9.89 7.07 9.74 7.06C9.59 7.05 9.42 7.06 9.53 7.37Z"/></svg>
           </div>
@@ -129,7 +144,7 @@
         </a>
 
         <!-- Contact 5: Letícia -->
-        <a href="https://wa.me/5511981000049?text=Ol%C3%A1%2C%20tenho%20informa%C3%A7%C3%B5es%20sobre%20a%20NEGA%20%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
+        <a href="https://wa.me/5511981000049?text=Ol%C3%A1%2C%20vi%20pelo%20site%20que%20a%20NEGA%20foi%20encontrada%21%20Que%20%C3%B3tima%20not%C3%ADcia%21%20%F0%9F%8E%89%F0%9F%90%BE" target="_blank" rel="noopener noreferrer" class="wa-btn">
           <div class="wa-icon-box">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.37C9.37 7.38 9.12 7.43 8.9 7.67C8.68 7.91 8.07 8.48 8.07 9.64C8.07 10.8 8.92 11.92 9.04 12.08C9.16 12.24 10.7 14.6 13.06 15.62C13.62 15.86 14.05 16.01 14.39 16.12C14.96 16.3 15.48 16.27 15.89 16.21C16.35 16.14 17.31 15.63 17.51 15.06C17.71 14.5 17.71 14.01 17.65 13.91C17.59 13.81 17.43 13.75 17.18 13.62C16.94 13.5 15.72 12.9 15.5 12.82C15.27 12.73 15.11 12.69 14.95 12.93C14.78 13.18 14.33 13.71 14.19 13.87C14.05 14.03 13.91 14.05 13.67 13.93C13.42 13.81 12.63 13.55 11.7 12.72C10.97 12.07 10.48 11.27 10.34 11.03C10.2 10.78 10.33 10.65 10.45 10.53C10.56 10.42 10.7 10.24 10.82 10.1C10.94 9.96 10.98 9.86 11.06 9.7C11.14 9.53 11.1 9.39 11.04 9.27C10.98 9.15 10.5 7.97 10.29 7.48C10.1 7 9.89 7.07 9.74 7.06C9.59 7.05 9.42 7.06 9.53 7.37Z"/></svg>
           </div>
@@ -146,7 +161,7 @@
       </div>
 
       <!-- PHOTO GALLERY (GALERIA DA NEGA) -->
-      <section class="gallery-section" aria-label="Mais fotos da Nega">
+      <section class="gallery-section" aria-label="Fotos da Nega">
         <div class="gallery-header">
           <span class="gallery-icon">📸</span>
           <h2 class="gallery-title">Mais fotos da Nega</h2>
@@ -175,14 +190,14 @@
         </div>
       </section>
 
-      <!-- Quick Action: Share Flyer / Copy Link -->
+      <!-- Quick Action: Share Good News / Copy Link -->
       <footer class="card-footer">
-        <button id="btnSharePage" class="btn-share" title="Compartilhar imagem do cartaz da Nega">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
-          <span>Compartilhar com amigos</span>
+        <button id="btnSharePage" class="btn-share" title="Compartilhar a boa notícia que a Nega foi encontrada">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+          <span>Compartilhar a boa notícia 🎉</span>
         </button>
 
-        <p class="location-tag">📍 Santo André / SP • Jd. Ipanema</p>
+        <p class="location-tag">📍 Santo André / SP • Jd. Ipanema • Caso Encerrado com Final Feliz ❤️</p>
       </footer>
 
     </div>

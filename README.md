@@ -1,44 +1,42 @@
-# 🐾 Site da Gata NEGA (Desaparecida)
+# 🎉 Gata NEGA - Encontrada com Sucesso! 🐾🏠
 
-Página web estilo **Linktree** criada para ser acessada via QR Code ou compartilhamento direto, direcionando quem encontrou ou tem informações sobre a **NEGA** diretamente para o WhatsApp dos tutores.
+Página oficial atualizada comunicando o **final feliz e o resgate da gata NEGA** no Jardim Ipanema (Santo André). Ao escanear os QR Codes dos panfletos ou acessar o link, os vizinhos e apoiadores visualizam a mensagem de agradecimento, fotos da Nega segura em casa e a opção de compartilhar a boa notícia.
 
 ---
 
-## 📱 Contatos Configurados no WhatsApp
+## 💚 Status Atual
+
+- **Situação**: ✅ **ENCONTRADA / RESGATADA**
+- **Local**: Em casa com a família no Jd. Ipanema (Santo André - SP)
+- **Agradecimento**: Dedicado a todos os vizinhos, amigos e redes que ajudaram nas buscas e compartilhamentos!
+
+---
+
+## 📱 Contatos no WhatsApp
 
 | Nome | Telefone | Mensagem Pré-definida |
 | :--- | :--- | :--- |
-| **Julia (Tutora)** | `(11) 98423-4941` | *Olá, tenho informações sobre a NEGA 🐾* |
-| **Joselania** | `(11) 95272-8624` | *Olá, tenho informações sobre a NEGA 🐾* |
-| **Joselania** | `(11) 97958-8733` | *Olá, tenho informações sobre a NEGA 🐾* |
-| **Giovana** | `(11) 97766-9193` | *Olá, tenho informações sobre a NEGA 🐾* |
-| **Letícia** | `(11) 98100-0049` | *Olá, tenho informações sobre a NEGA 🐾* |
+| **Julia (Tutora)** | `(11) 98423-4941` | *Olá Julia, vi pelo site que a NEGA foi encontrada! Que ótima notícia! 🎉🐾* |
+| **Joselania** | `(11) 95272-8624` | *Olá, vi pelo site que a NEGA foi encontrada! Que ótima notícia! 🎉🐾* |
+| **Joselania** | `(11) 97958-8733` | *Olá, vi pelo site que a NEGA foi encontrada! Que ótima notícia! 🎉🐾* |
+| **Giovana** | `(11) 97766-9193` | *Olá, vi pelo site que a NEGA foi encontrada! Que ótima notícia! 🎉🐾* |
+| **Letícia** | `(11) 98100-0049` | *Olá, vi pelo site que a NEGA foi encontrada! Que ótima notícia! 🎉🐾* |
 
 ---
 
-## 🚀 Como Publicar no Vercel (Passo a Passo)
+## 🚀 Publicação no Vercel
 
-### Opção 1: Pelo Terminal (Mais Rápido - 1 minuto)
-Abra o terminal nesta pasta (`d:\Desenvolvimento\Nega`) e rode:
+Para atualizar a versão no ar pelo terminal:
 
 ```bash
-npx vercel
+npx vercel --prod
 ```
-1. Faça login caso solicitado.
-2. Pressione `Enter` para aceitar os padrões do projeto.
-3. O link oficial do site será gerado na hora! (ex: `https://nega-desaparecida.vercel.app`)
-
-### Opção 2: Pelo Navegador (Sem comandos)
-1. Acesse [vercel.com](https://vercel.com) e faça login.
-2. Arraste a pasta do projeto ou conecte seu repositório do GitHub.
-3. Clique em **Deploy**.
 
 ---
 
 ## 📁 Estrutura de Arquivos
 
-- [index.html](file:///d:/Desenvolvimento/Nega/index.html) — Estrutura com o cartão centralizado e botões do WhatsApp
-- [style.css](file:///d:/Desenvolvimento/Nega/style.css) — Fundo de patinhas estilizado, design responsivo e efeitos modernos
-- [app.js](file:///d:/Desenvolvimento/Nega/app.js) — Botão nativo de compartilhamento e cópia do link
-- [vercel.json](file:///d:/Desenvolvimento/Nega/vercel.json) — Configuração otimizada para o Vercel
-- `assets/` — Foto da Nega (`nega.png`) e panfleto original
+- [index.html](file:///d:/Desenvolvimento/Nega/index.html) — Layout comemorativo com cartão de agradecimento e botões de WhatsApp
+- [style.css](file:///d:/Desenvolvimento/Nega/style.css) — Tema verde esmeralda festivo, confetes e fundo com patinhas
+- [app.js](file:///d:/Desenvolvimento/Nega/app.js) — Efeito de confetes no canvas, compartilhamento da boa notícia e galeria de fotos
+- [vercel.json](file:///d:/Desenvolvimento/Nega/vercel.json) — Configurações de cache e deploy
